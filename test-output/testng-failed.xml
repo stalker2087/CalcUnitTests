@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="2" parallel="methods" name="Failed suite [Main Operations]" guice-stage="DEVELOPMENT">
+  <listeners>
+    <listener class-name="listeners.CalcTestListener"/>
+  </listeners>
+  <test thread-count="2" parallel="methods" name="Mult Tests(failed)">
+    <groups>
+      <run>
+        <include name="Smoke"/>
+      </run>
+    </groups>
+    <classes>
+      <class name="com.epam.cdp.CalcUnitTests.Tests.MultCalcTestDouble">
+        <methods>
+          <include name="preCondition"/>
+          <include name="multTest" invocation-numbers="0 2"/>
+        </methods>
+      </class> <!-- com.epam.cdp.CalcUnitTests.Tests.MultCalcTestDouble -->
+    </classes>
+  </test> <!-- Mult Tests(failed) -->
+</suite> <!-- Failed suite [Main Operations] -->

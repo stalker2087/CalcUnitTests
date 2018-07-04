@@ -1,0 +1,37 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Main Operations" parallel="methods" thread-count="2">
+
+    <listeners>
+        <listener class-name="listeners.CalcTestListener"></listener>
+    </listeners>
+
+
+    <test name="Sub Tests">
+        <parameter name="a" value="84"></parameter>
+        <parameter name="b" value="6"></parameter>
+        <parameter name="Result" value="78"></parameter>
+        
+        <groups>
+            <run>
+                <include name="Smoke"></include>
+            </run>
+        </groups>
+        <classes>
+            <class name="com.epam.cdp.CalcUnitTests.Tests.SubCalcTestLong"></class>
+            <class name="com.epam.cdp.CalcUnitTests.Tests.SubCalcTestDouble"></class>
+        </classes>
+    </test>
+    
+    <test name="Mult Tests">
+        <groups>
+            <run>
+                <include name="Smoke"></include>
+            </run>
+        </groups>
+        <classes>
+            <class name="com.epam.cdp.CalcUnitTests.Tests.MultCalcTestLong"></class>
+            <class name="com.epam.cdp.CalcUnitTests.Tests.MultCalcTestDouble"></class>
+        </classes>
+    </test>
+
+</suite>
