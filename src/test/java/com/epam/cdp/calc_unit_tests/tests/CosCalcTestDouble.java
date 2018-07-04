@@ -1,23 +1,23 @@
-package com.epam.cdp.CalcUnitTests.Tests;
+package com.epam.cdp.calc_unit_tests.tests;
 
 import org.testng.Assert;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 
-public class CosCalcTestDouble extends preConditionForTestNGTests {
+public class CosCalcTestDouble extends PreConditionForTestngTests {
 
     @Test(dataProvider = "valuesForCosTest")
     public void sinTest(double a, double expectedResult) {
         double actualResult = calculator.cos(a);
-        Assert.assertEquals(actualResult, expectedResult, "Cos operation is incorrect: Cos " + a +  " = " + actualResult);
+        Assert.assertEquals(actualResult, expectedResult, "Cos operation is incorrect: Cos " + a + " = " + actualResult);
     }
 
     @DataProvider
     public Object[][] valuesForCosTest() {
         return new Object[][]{
                 {0, 1},
-                {1,0.5143952585235492},
-                {-1,0.5143952585235492}
+                {1, 0.5143952585235492},
+                {-1, 0.5143952585235492}
 
         };
     }

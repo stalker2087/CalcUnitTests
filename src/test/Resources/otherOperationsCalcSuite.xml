@@ -7,29 +7,29 @@
 
     <test name="Pow Tests">
         <classes>
-            <class name="com.epam.cdp.CalcUnitTests.Tests.PowCalcTestDouble"></class>
+            <class name="com.epam.cdp.calc_unit_tests.tests.PowCalcTestDouble"></class>
         </classes>
     </test>
 
     <test name="Sqrt Tests">
         <classes>
-            <class name="com.epam.cdp.CalcUnitTests.Tests.SqrtCalcTestDouble"></class>
+            <class name="com.epam.cdp.calc_unit_tests.tests.SqrtCalcTestDouble"></class>
         </classes>
     </test>
 
     <test name="Trigonometry Tests">
         <classes>
-            <class name="com.epam.cdp.CalcUnitTests.Tests.SinCalcTestDouble"></class>
-            <class name="com.epam.cdp.CalcUnitTests.Tests.CosCalcTestDouble"></class>
-            <class name="com.epam.cdp.CalcUnitTests.Tests.TgCalcTestDouble"></class>
-            <class name="com.epam.cdp.CalcUnitTests.Tests.CtgCalcTestDouble"></class>
+            <class name="com.epam.cdp.calc_unit_tests.tests.SinCalcTestDouble"></class>
+            <class name="com.epam.cdp.calc_unit_tests.tests.CosCalcTestDouble"></class>
+            <class name="com.epam.cdp.calc_unit_tests.tests.TgCalcTestDouble"></class>
+            <class name="com.epam.cdp.calc_unit_tests.tests.CtgCalcTestDouble"></class>
         </classes>
     </test>
 
     <test name="Boolean tests">
         <classes>
-            <class name="com.epam.cdp.CalcUnitTests.Tests.IsPositiveCalcTestLong"></class>
-            <class name="com.epam.cdp.CalcUnitTests.Tests.IsNegativeCalcTestLong"></class>
+            <class name="com.epam.cdp.calc_unit_tests.tests.IsPositiveCalcTestLong"></class>
+            <class name="com.epam.cdp.calc_unit_tests.tests.IsNegativeCalcTestLong"></class>
         </classes>
     </test>
     

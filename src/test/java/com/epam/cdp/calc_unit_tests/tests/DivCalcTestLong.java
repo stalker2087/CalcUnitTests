@@ -1,4 +1,4 @@
-package com.epam.cdp.CalcUnitTests.Tests;
+package com.epam.cdp.calc_unit_tests.tests;
 
 import com.tngtech.java.junit.dataprovider.DataProvider;
 import com.tngtech.java.junit.dataprovider.UseDataProvider;
@@ -8,7 +8,7 @@ import org.junit.runner.RunWith;
 import com.tngtech.java.junit.dataprovider.DataProviderRunner;
 
 @RunWith(DataProviderRunner.class)
-public class DivCalcTestLong extends preConditionForJunitTests {
+public class DivCalcTestLong extends PreConditionForJunitTests {
 
 
     @Test
@@ -31,7 +31,7 @@ public class DivCalcTestLong extends preConditionForJunitTests {
                 {10, 2, 5},
                 {-10, 2, -5},
                 {10, -2, -5},
-                {-5,-2,2},
+                {-5, -2, 2},
                 {1, 1, 1},
                 {0, 1, 0},
                 {5, 2, 2}

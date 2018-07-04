@@ -11,12 +11,12 @@
       </run>
     </groups>
     <classes>
-      <class name="com.epam.cdp.CalcUnitTests.Tests.MultCalcTestDouble">
+      <class name="com.epam.cdp.calc_unit_tests.tests.MultCalcTestDouble">
         <methods>
-          <include name="preCondition"/>
           <include name="multTest" invocation-numbers="0 2"/>
+          <include name="preCondition"/>
         </methods>
-      </class> <!-- com.epam.cdp.CalcUnitTests.Tests.MultCalcTestDouble -->
+      </class> <!-- com.epam.cdp.calc_unit_tests.tests.MultCalcTestDouble -->
     </classes>
   </test> <!-- Mult Tests(failed) -->
 </suite> <!-- Failed suite [Main Operations] -->

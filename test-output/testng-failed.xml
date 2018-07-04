@@ -1,22 +1,56 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite thread-count="2" parallel="methods" name="Failed suite [Main Operations]" guice-stage="DEVELOPMENT">
+<suite name="Failed suite [Other Operations]" guice-stage="DEVELOPMENT">
   <listeners>
     <listener class-name="listeners.CalcTestListener"/>
   </listeners>
-  <test thread-count="2" parallel="methods" name="Mult Tests(failed)">
-    <groups>
-      <run>
-        <include name="Smoke"/>
-      </run>
-    </groups>
+  <test thread-count="5" name="Pow Tests(failed)">
     <classes>
-      <class name="com.epam.cdp.CalcUnitTests.Tests.MultCalcTestDouble">
+      <class name="com.epam.cdp.calc_unit_tests.tests.PowCalcTestDouble">
         <methods>
+          <include name="afterTest"/>
+          <include name="powTest" invocation-numbers="5 6 7"/>
+          <include name="powNegativeTest" invocation-numbers="0 1"/>
           <include name="preCondition"/>
-          <include name="multTest" invocation-numbers="0 2"/>
         </methods>
-      </class> <!-- com.epam.cdp.CalcUnitTests.Tests.MultCalcTestDouble -->
+      </class> <!-- com.epam.cdp.calc_unit_tests.tests.PowCalcTestDouble -->
     </classes>
-  </test> <!-- Mult Tests(failed) -->
-</suite> <!-- Failed suite [Main Operations] -->
+  </test> <!-- Pow Tests(failed) -->
+  <test thread-count="5" name="Sqrt Tests(failed)">
+    <classes>
+      <class name="com.epam.cdp.calc_unit_tests.tests.SqrtCalcTestDouble">
+        <methods>
+          <include name="sqrtTest"/>
+          <include name="afterTest"/>
+          <include name="preCondition"/>
+        </methods>
+      </class> <!-- com.epam.cdp.calc_unit_tests.tests.SqrtCalcTestDouble -->
+    </classes>
+  </test> <!-- Sqrt Tests(failed) -->
+  <test thread-count="5" name="Trigonometry Tests(failed)">
+    <classes>
+      <class name="com.epam.cdp.calc_unit_tests.tests.CtgCalcTestDouble">
+        <methods>
+          <include name="afterTest"/>
+          <include name="ctgTest" invocation-numbers="0 1"/>
+          <include name="ctgTestNegative"/>
+          <include name="preCondition"/>
+        </methods>
+      </class> <!-- com.epam.cdp.calc_unit_tests.tests.CtgCalcTestDouble -->
+      <class name="com.epam.cdp.calc_unit_tests.tests.TgCalcTestDouble">
+        <methods>
+          <include name="tgTest" invocation-numbers="0 1 2 3"/>
+          <include name="afterTest"/>
+          <include name="preCondition"/>
+        </methods>
+      </class> <!-- com.epam.cdp.calc_unit_tests.tests.TgCalcTestDouble -->
+      <class name="com.epam.cdp.calc_unit_tests.tests.CosCalcTestDouble">
+        <methods>
+          <include name="afterTest"/>
+          <include name="sinTest" invocation-numbers="0 1 2"/>
+          <include name="preCondition"/>
+        </methods>
+      </class> <!-- com.epam.cdp.calc_unit_tests.tests.CosCalcTestDouble -->
+    </classes>
+  </test> <!-- Trigonometry Tests(failed) -->
+</suite> <!-- Failed suite [Other Operations] -->

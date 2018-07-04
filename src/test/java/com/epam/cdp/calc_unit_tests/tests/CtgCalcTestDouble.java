@@ -1,17 +1,16 @@
-package com.epam.cdp.CalcUnitTests.Tests;
+package com.epam.cdp.calc_unit_tests.tests;
 
-import org.junit.rules.ExpectedException;
 import org.testng.Assert;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 
-public class CtgCalcTestDouble extends preConditionForTestNGTests {
+public class CtgCalcTestDouble extends PreConditionForTestngTests {
 
 
     @Test(dataProvider = "valuesForCtgTest")
     public void ctgTest(double a, double expectedResult) {
         double actualResult = calculator.ctg(a);
-        Assert.assertEquals(actualResult, expectedResult, "Ctg operation is incorrect: Ctg " + a +  " = " + actualResult);
+        Assert.assertEquals(actualResult, expectedResult, "Ctg operation is incorrect: Ctg " + a + " = " + actualResult);
     }
 
     @Test(expectedExceptions = java.lang.Exception.class)

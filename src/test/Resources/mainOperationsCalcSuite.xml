@@ -17,8 +17,8 @@
             </run>
         </groups>
         <classes>
-            <class name="com.epam.cdp.CalcUnitTests.Tests.SubCalcTestLong"></class>
-            <class name="com.epam.cdp.CalcUnitTests.Tests.SubCalcTestDouble"></class>
+            <class name="com.epam.cdp.calc_unit_tests.tests.SubCalcTestLong"></class>
+            <class name="com.epam.cdp.calc_unit_tests.tests.SubCalcTestDouble"></class>
         </classes>
     </test>
     
@@ -29,8 +29,8 @@
             </run>
         </groups>
         <classes>
-            <class name="com.epam.cdp.CalcUnitTests.Tests.MultCalcTestLong"></class>
-            <class name="com.epam.cdp.CalcUnitTests.Tests.MultCalcTestDouble"></class>
+            <class name="com.epam.cdp.calc_unit_tests.tests.MultCalcTestLong"></class>
+            <class name="com.epam.cdp.calc_unit_tests.tests.MultCalcTestDouble"></class>
         </classes>
     </test>
 
